@@ -19,7 +19,7 @@
 
 		led-dsl = &dsl;
 		led-internet = &info_green;
-		led-wifi = &wifi;
+		led-wifi = &wlan;
 	};
 
 	memory@0 {
@@ -42,10 +42,10 @@
 			linux,code = <KEY_POWER>;
 		};
 
-		wifi {
+		wlan {
 			label = "wlan";
 			gpios = <&gpio 29 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_WLAN>;
+			linux,code = <KEY_RFKILL>;
 		};
 	};
 
@@ -68,7 +68,7 @@
 			gpios = <&gpio 34 GPIO_ACTIVE_LOW>;
 		};
 
-		wifi: wifi {
+		wlan: wlan {
 			label = "fritz3370:green:wlan";
 			gpios = <&gpio 35 GPIO_ACTIVE_LOW>;
 		};
