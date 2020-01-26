@@ -543,6 +543,18 @@ define Device/gl-usb150
 endef
 TARGET_DEVICES += gl-usb150
 
+define Device/jt-or750i
+  DEVICE_TITLE := Joy-IT JT-OR750i
+  DEVICE_PACKAGES := kmod-ath10k ath10k-firmware-qca9887 kmod-usb-core kmod-usb2
+  BOARDNAME := JT-OR750I
+  IMAGE_SIZE := 16000k
+  MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)ro
+  SUPPORTED_DEVICES := jt-or750i
+  IMAGE/sysupgrade.bin := append-kernel | pad-to $$$$(BLOCKSIZE) |\
+	append-rootfs | pad-rootfs | append-metadata | check-size $$$$(IMAGE_SIZE)
+endef
+TARGET_DEVICES += jt-or750i
+
 define Device/lan-turtle
   $(Device/tplink-16mlzma)
   DEVICE_TITLE := Hak5 LAN Turtle

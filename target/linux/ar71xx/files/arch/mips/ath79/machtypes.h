@@ -149,6 +149,7 @@ enum ath79_mach_type {
 	ATH79_MACH_HORNET_UB,			/* ALFA Networks Hornet-UB */
 	ATH79_MACH_JA76PF,			/* jjPlus JA76PF */
 	ATH79_MACH_JA76PF2,			/* jjPlus JA76PF2 */
+	ATH79_MACH_JT_OR750I,			/* Joy-IT JT-OR750i */
 	ATH79_MACH_JWAP003,			/* jjPlus JWAP003 */
 	ATH79_MACH_JWAP230,			/* jjPlus JWAP230 */
 	ATH79_MACH_KOALA,			/* OCEDO Koala */

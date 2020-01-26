@@ -275,6 +275,7 @@ platform_check_image() {
 	gl-usb150|\
 	hiwifi-hc6361|\
 	hornet-ub-x2|\
+	jt-or750i|\
 	jwap230|\
 	lbe-m5|\
 	lima|\

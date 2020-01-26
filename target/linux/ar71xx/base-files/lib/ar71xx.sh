@@ -974,6 +974,9 @@ ar71xx_board_detect() {
 	*"JA76PF2")
 		name="ja76pf2"
 		;;
+	*"JT-OR750i")
+		name="jt-or750i"
+		;;
 	*"JWAP003")
 		name="jwap003"
 		;;

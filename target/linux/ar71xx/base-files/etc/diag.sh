@@ -264,6 +264,9 @@ get_status_led() {
 	ja76pf2)
 		status_led="jjplus:green:led1"
 		;;
+	jt-or750i)
+		status_led="$board:inv_red:status"
+		;;
 	jwap230)
 		status_led="$board:green:led1"
 		;;

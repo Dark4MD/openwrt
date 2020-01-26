@@ -111,14 +111,20 @@ n5q)
 		;;
 	esac
 	;;
-archer-c25-v1)
+archer-c25-v1|\
+jt-or750i)
 	ucidef_set_led_netdev "wan" "WAN" "$board:green:wan" "eth0"
-	ucidef_set_led_wlan "wlan" "WLAN" "$board:green:wlan2g" "phy1tpt"
-	ucidef_set_led_wlan "wlan5g" "WLAN5G" "$board:green:wlan5g" "phy0tpt"
 	ucidef_set_led_switch "lan1" "LAN1" "$board:green:lan1" "switch0" "0x10"
 	ucidef_set_led_switch "lan2" "LAN2" "$board:green:lan2" "switch0" "0x08"
 	ucidef_set_led_switch "lan3" "LAN3" "$board:green:lan3" "switch0" "0x04"
-	ucidef_set_led_switch "lan4" "LAN4" "$board:green:lan4" "switch0" "0x02"
+
+	case "$board" in
+	archer-c25-v1)
+		ucidef_set_led_switch "lan4" "LAN4" "$board:green:lan4" "switch0" "0x02"
+		ucidef_set_led_wlan "wlan" "WLAN" "$board:green:wlan2g" "phy1tpt"
+		ucidef_set_led_wlan "wlan5g" "WLAN5G" "$board:green:wlan5g" "phy0tpt"
+		;;
+	esac
 	;;
 archer-c5|\
 archer-c7)
