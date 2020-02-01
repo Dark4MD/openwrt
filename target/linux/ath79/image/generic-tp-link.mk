@@ -289,6 +289,84 @@ define Device/tplink_tl-wr710n-v1
 endef
 TARGET_DEVICES += tplink_tl-wr710n-v1
 
+define Device/tplink_tl-wr841-v8-8m
+  $(Device/tplink-8mlzma)
+  ATH_SOC := ar9341
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (8M) v8
+  TPLINK_HWID := 0x08410808
+  SUPPORTED_DEVICES += tl-wr841n-v8-8m
+endef
+TARGET_DEVICES += tplink_tl-wr841-v8-8m
+
+define Device/tplink_tl-wr841-v9-8m
+  $(Device/tplink-8mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (8M) v9
+  TPLINK_HWID := 0x08410809
+  SUPPORTED_DEVICES += tl-wr841n-v9
+endef
+TARGET_DEVICES += tplink_tl-wr841-v9-8m
+
+define Device/tplink_tl-wr841-v10-8m
+  $(Device/tplink-8mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (8M) v10
+  TPLINK_HWID := 0x08410810
+  SUPPORTED_DEVICES += tl-wr841n-v9
+endef
+TARGET_DEVICES += tplink_tl-wr841-v10-8m
+
+define Device/tplink_tl-wr841-v11-8m
+  $(Device/tplink-8mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (8M) v11
+  TPLINK_HWID := 0x08410811
+  SUPPORTED_DEVICES += tl-wr841n-v11
+  IMAGES += factory-us.bin factory-eu.bin
+  IMAGE/factory-us.bin := append-rootfs | mktplinkfw factory -C US
+  IMAGE/factory-eu.bin := append-rootfs | mktplinkfw factory -C EU
+endef
+TARGET_DEVICES += tplink_tl-wr841-v11-8m
+
+define Device/tplink_tl-wr841-v8-16m
+  $(Device/tplink-16mlzma)
+  ATH_SOC := ar9341
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (16M) v8
+  TPLINK_HWID := 0x08411608
+  SUPPORTED_DEVICES += tl-wr841n-v8
+endef
+TARGET_DEVICES += tplink_tl-wr841-v8-16m
+
+define Device/tplink_tl-wr841-v9-16m
+  $(Device/tplink-16mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (16M) v9
+  TPLINK_HWID := 0x08411609
+  SUPPORTED_DEVICES += tl-wr841n-v9
+endef
+TARGET_DEVICES += tplink_tl-wr841-v9-16m
+
+define Device/tplink_tl-wr841-v10-16m
+  $(Device/tplink-16mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (16M) v10
+  TPLINK_HWID := 0x08411610
+  SUPPORTED_DEVICES += tl-wr841n-v9
+endef
+TARGET_DEVICES += tplink_tl-wr841-v10-16m
+
+define Device/tplink_tl-wr841-v11-16m
+  $(Device/tplink-16mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-Link TL-WR841N/ND Mod (16M) v11
+  TPLINK_HWID := 0x08411611
+  SUPPORTED_DEVICES += tl-wr841n-v11
+  IMAGES += factory-us.bin factory-eu.bin
+  IMAGE/factory-us.bin := append-rootfs | mktplinkfw factory -C US
+  IMAGE/factory-eu.bin := append-rootfs | mktplinkfw factory -C EU
+endef
+TARGET_DEVICES += tplink_tl-wr841-v11-16m
+
 define Device/tplink_tl-wr842n-v1
   $(Device/tplink-8m)
   ATH_SOC := ar7241

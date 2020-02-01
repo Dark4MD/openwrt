@@ -75,8 +75,14 @@ ath79_setup_interfaces()
 	tplink,tl-mr3420-v1|\
 	tplink,tl-wr841-v7|\
 	tplink,tl-wr841-v9|\
+	tplink,tl-wr841-v9-8m|\
+	tplink,tl-wr841-v9-16m|\
 	tplink,tl-wr841-v10|\
+	tplink,tl-wr841-v10-8m|\
+	tplink,tl-wr841-v10-16m|\
 	tplink,tl-wr841-v11|\
+	tplink,tl-wr841-v11-8m|\
+	tplink,tl-wr841-v11-16m|\
 	tplink,tl-wr841-v12|\
 	tplink,tl-wr842n-v1|\
 	tplink,tl-wr842n-v3|\
@@ -237,6 +243,8 @@ ath79_setup_interfaces()
 	tplink,tl-wr740n-v4|\
 	tplink,tl-wr741nd-v4|\
 	tplink,tl-wr841-v8|\
+	tplink,tl-wr841-v8-8m|\
+	tplink,tl-wr841-v8-16m|\
 	tplink,tl-wr842n-v2)
 		ucidef_set_interface_wan "eth1"
 		ucidef_add_switch "switch0" \
