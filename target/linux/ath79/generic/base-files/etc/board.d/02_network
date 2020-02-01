@@ -75,6 +75,22 @@ ath79_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"0@eth1" "1:lan" "2:lan" "3:lan" "4:lan" "5:wan" "6@eth0"
 		;;
+	tplink,tl-wr841-v8-8m|\
+	tplink,tl-wr841-v8-16m)
+		ucidef_set_interface_wan "eth1"
+		ucidef_add_switch "switch0" \
+			"0@eth0" "1:lan:4" "2:lan:1" "3:lan:2" "4:lan:3"
+		;;
+	tplink,tl-wr841-v9-8m|\
+	tplink,tl-wr841-v9-16m|\
+	tplink,tl-wr841-v10-8m|\
+	tplink,tl-wr841-v10-16m|\
+	tplink,tl-wr841-v11-8m|\
+	tplink,tl-wr841-v11-16m)
+		ucidef_set_interface_wan "eth1"
+		ucidef_add_switch "switch0" \
+			"0@eth0" "1:lan:4" "2:lan:3" "3:lan:2" "4:lan:1"
+		;;
 	buffalo,wzr-hp-ag300h|\
 	tplink,archer-c25-v1|\
 	tplink,tl-wdr3500-v1|\
