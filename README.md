@@ -4,7 +4,7 @@
 Initial OpenWrt support for FriendlyElec NanoPi R2S SBC with 2x1000Mbps ports.
 ![enter image description here](http://wiki.friendlyarm.com/wiki/images/6/66/NanoPi_R2S-1.jpg )![enter image description here](http://wiki.friendlyarm.com/wiki/images/2/20/NanoPi_R2S-layout.jpg )
 # Downloads
-Go to release section, or [click here](https://github.com/jayanta525/openwrt-nanopi-r2s/releases/tag/v1.0-openwrt).
+Go to release section, or [click here](https://github.com/jayanta525/openwrt-nanopi-r2s/releases).
 
 For test build, [click here](https://jayantajit.me/downloads/openwrt/stable/).
 
